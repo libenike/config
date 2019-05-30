@@ -2,11 +2,12 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-clang'
+Plug 'tweekmonster/deoplete-clang2'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Shougo/deol.nvim'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -34,13 +35,12 @@ set smarttab
 set expandtab
 
 colorscheme afterglow
+hi Normal guibg=NONE ctermbg=NONE
+
+let g:python3_host_prog = '/usr/bin/python'
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1
-
-"DEOPLETE_CLANG
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/lib/clang/7.0.1/include'
 
 "GUTENTAGS
 let g:gutentags_project_root=['.gutentags']

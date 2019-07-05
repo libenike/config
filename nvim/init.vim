@@ -1,3 +1,9 @@
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 "PLUG LIST
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -37,7 +43,8 @@ set expandtab
 colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 
-let g:python3_host_prog = '/usr/bin/python'
+let g:python2_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1

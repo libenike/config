@@ -8,12 +8,13 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tweekmonster/deoplete-clang2'
+Plug 'deoplete-plugins/deoplete-clang'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'Shougo/deol.nvim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-fugitive'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,6 +49,10 @@ let g:python3_host_prog = '/usr/bin/python3'
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1
+
+"DEOPLETE-CLANG
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib/llvm-6.0/include'
 
 "GUTENTAGS
 let g:gutentags_project_root=['.gutentags']

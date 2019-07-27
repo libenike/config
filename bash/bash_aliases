@@ -1,2 +1,4 @@
 alias e=nvim
 alias ec="nvim ~/.config/nvim/init.vim"
+
+export GTEST_COLOR=1

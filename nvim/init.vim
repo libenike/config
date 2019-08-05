@@ -20,7 +20,7 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
-set path+=.,**,/usr/include
+set path+=.,../**,**,/usr/include
 set wildmenu
 
 syntax enable
@@ -49,6 +49,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
 "DEOPLETE-CLANG
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so'
@@ -59,3 +60,7 @@ let g:gutentags_project_root=['.gutentags']
 let g:gutentags_add_default_project_roots=0
 let g:gutentags_ctags_extra_args = ['-h=".h.hpp"', '--c++-kinds=+p']
 
+"ULTISNIPS
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

@@ -8,7 +8,6 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'deoplete-plugins/deoplete-clang'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-fugitive'
@@ -45,6 +44,9 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:LanguageClient_serverCommands = {
   \ 'cpp': ['clangd'],
   \ }
+
+:nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+:nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1

@@ -20,7 +20,7 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
-set path+=.,../**,**,/usr/include
+set path+=.,../**
 set wildmenu
 
 set number relativenumber

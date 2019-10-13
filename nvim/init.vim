@@ -42,7 +42,7 @@ colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 
 let g:LanguageClient_serverCommands = {
-  \ 'cpp': ['clangd','-compile-commands-dir=build'],
+  \ 'cpp': ['clangd'],
   \ }
 
 :nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>

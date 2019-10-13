@@ -46,7 +46,6 @@ let g:LanguageClient_serverCommands = {
   \ }
 
 :nnoremap <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
-:nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
 
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1

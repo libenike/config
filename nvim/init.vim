@@ -45,7 +45,7 @@ let g:LanguageClient_serverCommands = {
   \ 'cpp': ['clangd'],
   \ }
 
-:nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+:nnoremap <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
 :nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
 
 "DEOPLETE

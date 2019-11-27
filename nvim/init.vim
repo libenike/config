@@ -42,6 +42,9 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+"Enable line numbers in netrw
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
 colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 

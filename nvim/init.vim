@@ -15,6 +15,10 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'tpope/vim-surround'
+
+Plug 'easymotion/vim-easymotion'
+
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
@@ -49,7 +53,7 @@ colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 
 let g:LanguageClient_serverCommands = {
-  \ 'cpp': ['clangd', '--compile-commands-dir=build'],
+  \ 'cpp': ['clangd'],
   \ }
 
 :nnoremap <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>

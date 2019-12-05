@@ -13,7 +13,7 @@ if test -e $link_compile_commands_path; then
 fi \
     &&
 if test -f $compile_commands_path; then
-    ln -s $compile_commands_path $link_compile_commands_path \
+    ln -s $compile_commands_path $link_compile_commands_path
 fi \
     &&
 cmake --build build

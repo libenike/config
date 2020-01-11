@@ -71,3 +71,8 @@ call deoplete#custom#source('LanguageClient',
 "SLIME
 let g:slime_target = "tmux"
 
+"Parenthesis autocomplete
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ []<Esc>i
+

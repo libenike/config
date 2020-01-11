@@ -24,6 +24,8 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
+Plug 'jpalardy/vim-slime'
+
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -65,4 +67,7 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 call deoplete#custom#source('LanguageClient',
             \ 'min_pattern_length',
             \ 2)
+
+"SLIME
+let g:slime_target = "tmux"
 

@@ -26,6 +26,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 
 Plug 'jpalardy/vim-slime'
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -70,9 +72,4 @@ call deoplete#custom#source('LanguageClient',
 
 "SLIME
 let g:slime_target = "tmux"
-
-"Parenthesis autocomplete
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
 

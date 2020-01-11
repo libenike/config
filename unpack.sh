@@ -5,5 +5,8 @@ cd $script_path
 
 for module in $(ls -d $script_path/*/)
 do
-    "$module"unpack.sh
+    unpack_script="$module"unpack.sh
+    if test -f $unpack_script; then
+        $unpack_script
+    fi
 done

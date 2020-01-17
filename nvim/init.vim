@@ -28,6 +28,8 @@ Plug 'jpalardy/vim-slime'
 
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'wlangstroth/vim-racket'
+
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible

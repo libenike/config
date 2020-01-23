@@ -7,6 +7,8 @@ install_path=$script_path/install
 compile_commands_path=$build_path/compile_commands.json
 link_compile_commands_path=$script_path/compile_commands.json
 
+cd $script_path
+
 cmake -S $source_path -B $build_path \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
     &&

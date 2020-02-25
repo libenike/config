@@ -30,6 +30,9 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'wlangstroth/vim-racket'
 
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -75,3 +78,7 @@ call deoplete#custom#source('LanguageClient',
 "SLIME
 let g:slime_target = "tmux"
 
+"ULTISNIPS
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'

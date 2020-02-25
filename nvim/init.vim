@@ -38,7 +38,6 @@ call plug#end()
 set nocompatible
 
 set path+=.,../**
-set wildmenu
 
 set number relativenumber
 

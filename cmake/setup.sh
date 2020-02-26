@@ -11,6 +11,7 @@ cd $script_path
 
 cmake -S $source_path -B $build_path \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+    -DCMAKE_BUILD_TYPE=Debug \
     &&
 if test -e $link_compile_commands_path; then
     rm $link_compile_commands_path

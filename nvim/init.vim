@@ -30,7 +30,7 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'wlangstroth/vim-racket'
 
-Plug 'sirver/ultisnips'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 call plug#end()

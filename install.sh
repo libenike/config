@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt-get install build-essential
+
 sudo apt-get install tmux
 
 sudo apt-get install apt-transport-https ca-certificates gnupg software-properties-common wget

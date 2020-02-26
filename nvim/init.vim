@@ -74,3 +74,4 @@ call deoplete#custom#source('LanguageClient',
 "SLIME
 let g:slime_target = "tmux"
 
+:nnoremap <C-K> <C-A>

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
-sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository -y 'deb https://apt.kitware.com/ubuntu/ bionic main'
+sudo add-apt-repository -y ppa:neovim-ppa/stable
 
 sudo apt-get update
 

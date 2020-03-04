@@ -1,14 +1,14 @@
 #!/bin/bash
 
-wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
-sudo add-apt-repository -y 'deb https://apt.kitware.com/ubuntu/ bionic main'
-sudo add-apt-repository -y ppa:neovim-ppa/stable
+wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | apt-key add -
+add-apt-repository -y 'deb https://apt.kitware.com/ubuntu/ bionic main'
+add-apt-repository -y ppa:neovim-ppa/stable
 
-sudo apt-get update
+apt-get update
 
-sudo apt-get -y install build-essential clang-tools-8 tmux apt-transport-https ca-certificates gnupg software-properties-common wget cmake neovim python python-pip python3 python3-pip
+apt-get -y install build-essential clang-tools-8 tmux apt-transport-https ca-certificates gnupg software-properties-common wget cmake neovim python python-pip python3 python3-pip
 
 pip install --user pynvim
 pip3 install --user pynvim
 
-sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-8 100
+update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-8 100

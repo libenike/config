@@ -39,6 +39,8 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
+let mapleader = ' '
+
 set path+=.,../**
 
 set number relativenumber
@@ -80,6 +82,7 @@ call deoplete#custom#source('LanguageClient',
 let g:slime_target = "tmux"
 
 :nnoremap <C-K> <C-A>
+:nnoremap <C-J> <C-X>
 
 "ULTISNIPS
 let g:UltiSnipsExpandTrigger = '<tab>'
@@ -88,3 +91,5 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "VIM-CLANG-AUTOFORMAT
 let g:clang_format#code_style = 'google'
+let g:clang_format#style_options = {"AllowShortFunctionsOnASingleLine" : "None"}
+:nnoremap <Leader>f :ClangFormat<CR>

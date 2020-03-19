@@ -91,5 +91,8 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "VIM-CLANG-AUTOFORMAT
 let g:clang_format#code_style = 'google'
-let g:clang_format#style_options = {"AllowShortFunctionsOnASingleLine" : "None"}
+let g:clang_format#style_options = {
+    \"AllowShortFunctionsOnASingleLine" : "None",
+    \"IncludeBlocks" : "Preserve"
+\}
 :nnoremap <Leader>f :ClangFormat<CR>

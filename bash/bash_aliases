@@ -6,4 +6,12 @@ alias sudo='sudo '
 alias e=nvim
 alias ec="nvim ~/.config/nvim/init.vim"
 
+td() {
+  if [ $# == 0 ]; then
+    nvim -c 'packadd termdebug' -c 'Termdebug';
+  else
+    nvim -c 'packadd termdebug' -c "TermdebugCommand $*";
+  fi
+}
+
 export GTEST_COLOR=1

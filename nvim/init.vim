@@ -61,6 +61,8 @@ set expandtab
 "Enable line numbers in netrw
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
+let g:termdebug_wide=1
+
 colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 

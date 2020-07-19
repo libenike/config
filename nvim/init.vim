@@ -93,6 +93,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "VIM-CLANG-AUTOFORMAT
 let g:clang_format#code_style = 'google'
+let g:clang_format#auto_format = 0
 let g:clang_format#style_options = {
     \"AllowShortFunctionsOnASingleLine" : "None",
     \"IncludeBlocks" : "Preserve"

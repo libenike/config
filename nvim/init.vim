@@ -68,6 +68,7 @@ hi Normal guibg=NONE ctermbg=NONE
 
 let g:LanguageClient_serverCommands = {
   \ 'cpp': ['clangd'],
+  \ 'c': ['clangd'],
   \ 'python': ['pyls'],
   \ }
 

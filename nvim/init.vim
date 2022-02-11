@@ -67,8 +67,14 @@ colorscheme afterglow
 hi Normal guibg=NONE ctermbg=NONE
 
 let g:LanguageClient_serverCommands = {
-  \ 'cpp': ['clangd'],
-  \ 'c': ['clangd'],
+  \ 'cpp': {
+  \   'name': 'clangd',
+  \   'command': ['clangd-10'],
+  \   'initializationOptions': {
+  \     'fallbackFlags': ['-std=c++20'],
+  \   },
+  \ },
+  \ 'c': ['clangd-10'],
   \ 'python': ['pyls'],
   \ }
 

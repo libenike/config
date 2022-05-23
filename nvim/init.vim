@@ -69,12 +69,12 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:LanguageClient_serverCommands = {
   \ 'cpp': {
   \   'name': 'clangd',
-  \   'command': ['clangd-10'],
+  \   'command': ['clangd'],
   \   'initializationOptions': {
   \     'fallbackFlags': ['-std=c++20'],
   \   },
   \ },
-  \ 'c': ['clangd-10'],
+  \ 'c': ['clangd'],
   \ 'python': ['pyls'],
   \ }
 
